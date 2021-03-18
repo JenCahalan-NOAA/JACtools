@@ -1,0 +1,16 @@
+Package: JACtools
+Title: A Set of Relatively Useful Functions
+Version: 0.0.2.000
+Authors@R: person("Jen", "Cahalan", email = "jcahalan@psmfc.org", role = c("aut", "cre"))
+Description: A set of awesome functions that I have written, adapted from other folks posted functions, or taken from other sources. These are functions I use frequently and so I created this package.
+Depends:
+    grid,
+    gridExtra,
+    RODBC,
+    ggplot2,
+    R (>= 3.0)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+

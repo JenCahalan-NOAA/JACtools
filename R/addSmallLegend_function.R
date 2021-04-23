@@ -12,7 +12,7 @@
 #' @examples
 #' addSmallLegend(p)
 
-addSmallLegend <- function(myPlot, pointSize = 0.5, textSize = 3, spaceLegend = 0.1) {
+add_small_legend <- function(myPlot, pointSize = 0.5, textSize = 3, spaceLegend = 0.1) {
     myPlot +
         guides(shape = guide_legend(override.aes = list(size = pointSize)),
                color = guide_legend(override.aes = list(size = pointSize)),

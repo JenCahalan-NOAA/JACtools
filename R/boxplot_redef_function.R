@@ -20,8 +20,8 @@
 #'           + geom_jitter(position=position_jitter(width=.2), size=1.5) 
 #'           + ggtitle("Boxplot con media, 1 Std. Dev., valore min. e max.") + xlab("Gruppi") + ylab("Valori"))
 #' p1
-
-mean.sd <- function(x) {
+#'
+mean_sd <- function(x) {
     r <- c(min(x), mean(x) - sd(x), mean(x), mean(x) + sd(x), max(x))
     names(r) <- c("ymin", "lower", "middle", "upper", "ymax")
     r
@@ -51,8 +51,8 @@ mean.sd <- function(x) {
 #'			+ geom_jitter(position=position_jitter(width=.2), size=1.5) 
 #'			+ ggtitle("Boxplot con media, 2Std. Dev. (95%CI), valore min. e max.") + xlab("Gruppi") + ylab("Valori"))
 #' p2
-
-mean.2sd <- function(x) {
+#'
+mean_2sd <- function(x) {
 	r <- c(min(x), mean(x) - 1.96*sd(x), mean(x), mean(x) + 1.96*sd(x), max(x))
 	names(r) <- c("ymin", "lower", "middle", "upper", "ymax")
 	r

@@ -69,7 +69,7 @@ give_Vn <- function(x){
 #'			+ scale_fill_manual('', values=c("grey80","grey60"))
 #'			+ theme_bw())
 
-give.Qn <- function(x){
+give_Qn <- function(x){
 	return(c(y = quantile(x, probs = Q, na.rm = TRUE, names=FALSE), label = length(x)))
 }
 

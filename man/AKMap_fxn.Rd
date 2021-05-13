@@ -7,7 +7,15 @@
 AKMap_fxn()
 }
 \description{
-This function creates a base map of Alaska.
+This function creates a base map of Alaska, showing Canadian and Russian shorelines. 
+  This function uses the 'world2' dataset included in the sf package to generate a 
+  map of Alaska inclusive of the Canaian and Russian shorelines.
+}
+\details{
+There are 5 maps contained in the JACtools package: 2 Mercator with NMFS Reporting Areas (with and without labels: AK_MercatorL_fxn, AK_Mercator_fxn)
+                                                    2 Robinson with NMFS Reporting Areas (with and without labels: AK_RobinsonL_fxn, AK_Robinson_fxn)
+                                                    1 Mercator without NMFS Reporting Areas (AKMap_fxn)
+(https://www.icsm.gov.au/education/fundamentals-mapping/projections/commonly-used-map-projections)
 }
 \examples{
 AKMap_fxn()

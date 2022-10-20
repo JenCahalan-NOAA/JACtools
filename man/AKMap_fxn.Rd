@@ -9,12 +9,18 @@ AKMap_fxn()
 \description{
 This function creates a base map of Alaska, showing Canadian and Russian shorelines. 
   This function uses the 'world2' dataset included in the sf package to generate a 
-  map of Alaska inclusive of the Canaian and Russian shorelines.
+  map of Alaska inclusive of the Canaian and Russian shorelines.  \cr
 }
 \details{
-There are 5 maps contained in the JACtools package: 2 Mercator with NMFS Reporting Areas (with and without labels: AK_MercatorL_fxn, AK_Mercator_fxn)
-                                                    2 Robinson with NMFS Reporting Areas (with and without labels: AK_RobinsonL_fxn, AK_Robinson_fxn)
-                                                    1 Mercator without NMFS Reporting Areas (AKMap_fxn)
+Note that the warning message:
+    \emph{Warning message: In st_centroid.sf(nmfs_areas_shapefile): st_centroid assumes attributes are constant over geometries of x}  \cr
+    Indicates that the lables are not located exactly on the centroid for the NMFS Reporting Area (in addition some were intentially moved).  \cr
+Additionally note the message \emph{"although coordinates are longitude/latitude, st_intersection assumes that they are planar"}
+    indicates that spatial coordinates are on a flat space ({\eqn{R^2}}, not an ellipsoid or sphere); {\eqn{R^2}} is not in use. \cr  
+
+There are 5 maps contained in the JACtools package: \itemize{\item 2 Mercator with NMFS Reporting Areas (with and without labels: AK_MercatorL_fxn, AK_Mercator_fxn)
+                                                    \item 2 Robinson with NMFS Reporting Areas (with and without labels: AK_RobinsonL_fxn, AK_Robinson_fxn)
+                                                    \item 1 Mercator without NMFS Reporting Areas (AKMap_fxn)}
 (https://www.icsm.gov.au/education/fundamentals-mapping/projections/commonly-used-map-projections)
 }
 \examples{

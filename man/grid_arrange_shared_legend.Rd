@@ -11,8 +11,8 @@ grid_arrange_shared_legend(...)
 }
 \description{
 This function places a list of ggplot objects into a single object and
-   provides a shared legend for those plots.
-   Plots are stacked - one column.
+provides a shared legend for those plots.
+Plots are stacked - one column.
 }
 \examples{
 

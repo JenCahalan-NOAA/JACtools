@@ -17,7 +17,7 @@ add_small_legend(myPlot, pointSize = 0.5, textSize = 3, spaceLegend = 0.1)
 }
 \description{
 This function decreases the size of a ggplot legend for a specified plot. Works for shape, fill, and color legends.
-  Taken from https://stackoverflow.com/questions/52297978/decrease-overal-legend-size-elements-and-text
+Taken from \url{https://stackoverflow.com/questions/52297978/decrease-overal-legend-size-elements-and-text}
 }
 \examples{
 addSmallLegend(p)

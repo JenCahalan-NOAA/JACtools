@@ -12,8 +12,8 @@ data(alaska)
 }
 \description{
 This file contains the Alaska shoreline shape file created by J.Gasper (April 2020).
-   This file can be used to generate a ggplot object showing Alaska.
-   See AK_onlyMap_fxn()
+This file can be used to generate a ggplot object showing Alaska.
+See AK_onlyMap_fxn()
 }
 \examples{
 JACtools::AK_onlyMap_fxn()

@@ -11,9 +11,10 @@ shift_legend(p)
 }
 \description{
 This function places the legend of a facetted plot with an uneven number of facets
-   into the empty space (the empty facet area). 
-   This function is taken from stack overflow: https://stackoverflow.com/questions/54438495/shift-legend-into-empty-facets-of-a-faceted-plot-in-ggplot2
-   See also https://stackoverflow.com/questions/28496764/add-textbox-to-facet-wrapped-layout-in-ggplot2
+into the empty space (the empty facet area). \cr
+This function is taken from stack overflow: \url{https://stackoverflow.com/questions/54438495/shift-legend-into-empty-facets-of-a-faceted-plot-in-ggplot2} \cr
+See also \url{https://stackoverflow.com/questions/28496764/add-textbox-to-facet-wrapped-layout-in-ggplot2}  \cr
+and the cowplot package \url{https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html}
 }
 \examples{
 

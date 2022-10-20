@@ -12,8 +12,10 @@ give_Vn(x)
 \item{V}{The y-value for the label (n).}
 }
 \description{
-This function returns the length (number of observations, n) of a vector and a pre-specified y-value (V). 
-When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the specified Y-value (V). 
+This function returns the length (number of observations, n) of a vector and a pre-specified y-value (V). \cr
+}
+\details{
+When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the specified Y-value (V). \cr
 Note that the parameter V must be specified before using the function.
 }
 \examples{

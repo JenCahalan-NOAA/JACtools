@@ -3,10 +3,11 @@
 #' A Haversine Distance Function
 #'
 #' This function computes the great circle distance between two points (long, lat). 
-#' Computations default to kilometers (for the WGS84 ellipsoid). This code was 
-#'   adapted from https://en.wikipedia.org/wiki/Great-circle_distance;  
-#'   https://en.wikipedia.org/wiki/Haversine_formula;  http://www.movable-type.co.uk/scripts/latlong.html  
-#' In addition, see in the geosphere package  distm(p1, p2, fun = distVincentyEllipsoid) and distHaversine()
+#' Computations default to kilometers (for the WGS84 ellipsoid). \cr
+#' This code was adapted from <https://en.wikipedia.org/wiki/Great-circle_distance>;    
+#'   <https://en.wikipedia.org/wiki/Haversine_formula>;  and <http://www.movable-type.co.uk/scripts/latlong.html>  
+#' See also, in the geosphere package <https://cran.r-project.org/web/packages/geosphere/geosphere.pdf>:\cr
+#'   distm(p1, p2, fun = distVincentyEllipsoid) and distHaversine()
 #' @param long1 longitude for first point
 #' @param long2 longitude for second point
 #' @param lat1 latitude for first point

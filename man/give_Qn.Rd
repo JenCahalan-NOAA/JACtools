@@ -12,8 +12,11 @@ give_Qn(x)
 \item{Q}{The quartile (y-value) for the label (n). Q must be between 0 and 1.}
 }
 \description{
-This function returns the length (number of observations, n) of a vector and a pre-specified quartile (Q). 
-When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the specified Y-value quartile (Q). 
+This function returns the length (number of observations, n) of a vector and a pre-specified quartile (Q). \cr
+}
+\details{
+When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot
+into the box at the specified Y-value quartile (Q). \cr
 Note that the parameter Q must be specified before using the function.
 }
 \examples{

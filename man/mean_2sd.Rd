@@ -10,9 +10,10 @@ mean_2sd(x)
 \item{x}{a vector of numeric data}
 }
 \description{
-This function re-defines the hinges of a boxplot to equal the mean +/- 1.96 standard deviation of the data and the whiskers to be the range of the data (min and max).
-    If datapoints are normally distributed, this would equate to +/- 95% Confidence Interval
-    See also mean.sd for box defined by 1 std. dev
+This function re-defines the hinges of a boxplot to equal the mean +/- 1.96 standard deviation of the data
+and the whiskers to be the range of the data (min and max). \cr
+If datapoints are normally distributed, this would equate to +/- 95\% Confidence Interval \cr
+See also mean.sd for box defined by 1 std. dev
 }
 \examples{
 a <- rnorm(50, 0, 1)

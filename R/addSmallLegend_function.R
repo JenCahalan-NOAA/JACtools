@@ -2,7 +2,7 @@
 #' A Function to Decrease the Size of a GGplot Legend
 #'
 #' This function decreases the size of a ggplot legend for a specified plot. Works for shape, fill, and color legends.
-#'   Taken from https://stackoverflow.com/questions/52297978/decrease-overal-legend-size-elements-and-text
+#'   Taken from <https://stackoverflow.com/questions/52297978/decrease-overal-legend-size-elements-and-text>
 #' @param myPlot specifies the plot legend to shrink
 #' @param pointSize specifies the size of data points
 #' @param textSize specifies the text size for the legend title and text

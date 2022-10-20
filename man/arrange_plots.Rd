@@ -10,15 +10,15 @@ arrange_plots(..., nrow = NULL, ncol = NULL, as.table = FALSE)
 \item{nrow}{Number of rows of plots, defaults to NULL
 
 depends: ggplot2,
-         grid}
+grid}
 
 \item{ncol}{Number of columns of plots, defaults to NULL}
 
 \item{plotlist}{A list of plots to be arranged. Defaults to NULL.}
 }
 \description{
-This function places a list of ggplot objects into a single object. 
-taken from RBloggers, 3july12, combining ggplot images (https://www.r-bloggers.com/combining-ggplot-images/)
+This function places a list of ggplot objects into a single object.
+taken from RBloggers, 3July12, combining ggplot images \url{https://www.r-bloggers.com/combining-ggplot-images/}
 }
 \examples{
 x <- rnorm(100, 10, 3)

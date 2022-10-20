@@ -12,8 +12,8 @@ lag_day(input.dat, i)
 \item{i}{a constant that will be subtracted from the Haul_Date}
 }
 \description{
-This function subtracts a constant from a haul data (as.Date(format = ("%Y-%m-%d")). It would be useful if one wanted
-    to create a dataframe where dates are lagged.
+This function subtracts a constant from a haul data (as.Date(format = ("\%Y-\%m-\%d")). It would be useful if one wanted
+to create a dataframe where dates are lagged.
 }
 \examples{
  HAUL_DATE <- as.Date(c("2019-10-13", "2019-09-10","2019-07-11", "2019-04-27", "2019-09-09", "2019-05-27", "2019-09-14", "2019-08-24", "2019-09-28", "2019-04-18"),

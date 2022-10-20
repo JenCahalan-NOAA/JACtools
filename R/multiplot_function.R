@@ -2,7 +2,7 @@
 #' Put Multiple Plots on a Page 
 #'
 #' This function places a list of ggplot objects into a single object. 
-#' taken from RBloggers, 3july12, combining ggplot images, https://www.r-bloggers.com/2012/07/combining-ggplot-images/
+#' taken from RBloggers, 3july12, combining ggplot images, <https://www.r-bloggers.com/2012/07/combining-ggplot-images/>
 #' 
 #' 
 #' @param plotlist A list of plots to be combined. Defaults to NULL.

@@ -1,8 +1,9 @@
 #' Place a lm equation onto a ggplot
 #'
-#' This function places the equation used by geom_smooth(method='lm') onto a ggplot by creating a character string from the regression. 
-#'    Code for this function originated here: https://stackoverflow.com/questions/7549694/add-regression-line-equation-and-r2-on-graph
-#'    and was adapted from here: https://groups.google.com/g/ggplot2/c/1TgH-kG5XMA
+#' This function places the equation used by geom_smooth(method='lm') onto a ggplot by creating a character string from the regression. \cr
+#' 
+#'    Code for this function originated here: <https://stackoverflow.com/questions/7549694/add-regression-line-equation-and-r2-on-graph>
+#'    and was adapted from here: <https://groups.google.com/g/ggplot2/c/1TgH-kG5XMA>
 #'
 #' @param df A The dataframe used to create the regression
 #' @param y Regression dependant variable (y-axis of plot)

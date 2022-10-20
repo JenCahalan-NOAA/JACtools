@@ -13,7 +13,8 @@ anti_Mode_numeric(x)
 a numeric value, the value that is not the mode of x
 }
 \description{
-This function returns the value that is NOT the mode (anti-mode) of a numeric vector(x). Note this is only valid for vectors with two possible values
+This function returns the value that is NOT the mode (anti-mode) of a numeric vector(x).
+Note this is only valid for vectors with two possible values
 }
 \examples{
 x <- c(5,4,5,4,5,5,4,4,5,5,4,5,4,4,5,4,5,5,5,4,4,5,5,4,5)

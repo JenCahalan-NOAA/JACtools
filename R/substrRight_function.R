@@ -1,6 +1,7 @@
 #' A Right-handed Substring Function
 #'
-#' This function returns a portion of a string, counted from the right-hand margin. Useful for strings of uneven length where the trailing digits are of interest.
+#' This function returns a portion of a string, counted from the right-hand margin. 
+#' Useful for strings of uneven length where the trailing digits are of interest.
 #'     This function is similar to base::substr() except that the offset if counted from the right.
 #'     
 #' 

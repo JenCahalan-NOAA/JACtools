@@ -1,7 +1,8 @@
 #' A function to set the hinges of boxplt equal to 1 Std. Dev
 #'
-#' This function re-defines the hinges of a boxplot to equal the mean +/- one standard deviation of the data and the whiskers to be the range of the data (min and max).
-#'     See also mean.2sd for box defined by 1.96 std. dev 
+#' This function re-defines the hinges of a boxplot to equal the mean +/- one standard deviation of the data 
+#' and the whiskers to be the range of the data (min and max). \cr
+#'     See also mean.2sd for box defined by 1.96 std. dev. 
 #' @param x a vector of numeric data
 #' @keywords boxplot, Std.Dev, Std.Err
 #' @export
@@ -29,8 +30,9 @@ mean_sd <- function(x) {
 ##########################################################################################
 #' A Function to set the hinges of boxplt equal to 1.96 Std. Dev
 #'
-#' This function re-defines the hinges of a boxplot to equal the mean +/- 1.96 standard deviation of the data and the whiskers to be the range of the data (min and max).
-#'     If datapoints are normally distributed, this would equate to +/- 95% Confidence Interval
+#' This function re-defines the hinges of a boxplot to equal the mean +/- 1.96 standard deviation of the data 
+#' and the whiskers to be the range of the data (min and max). \cr
+#'     If datapoints are normally distributed, this would equate to +/- 95% Confidence Interval \cr
 #'     See also mean.sd for box defined by 1 std. dev 
 #' 
 #' @param x a vector of numeric data

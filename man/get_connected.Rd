@@ -12,7 +12,7 @@ get_connected(schema = "AFSC")
 \description{
 Opens connection to Oracle database schemas (RODBC)
 This function opens RODBC connections to database schemas such as the AFSC schemas. Users will be prompted for username and password.
-      schema defaults to 'AFSC'
+schema defaults to 'AFSC'
 }
 \examples{
 get_connected()

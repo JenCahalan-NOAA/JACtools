@@ -15,7 +15,7 @@ heart_fxn(name = NULL, message = "Happy Valentine's Day", text.color = "blue")
 }
 \description{
 This function places a message on a heart-shaped plot
-    I have no idea from whence this function came to me.
+I have no idea from whence this function came to me.
 }
 \examples{
 heart_fxn('Jen', 'Hello', 'green')

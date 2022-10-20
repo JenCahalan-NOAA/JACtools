@@ -1,7 +1,9 @@
 #' Place Sample Size on Boxplots at Mean y-value
 #'
-#' This function returns the length (number of observations, n) and the mean of a vector. 
-#' When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the mean value of the observations. 
+#' This function returns the length (number of observations, n) and the mean of a vector. \cr
+#' 
+#' When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot \cr
+#' into the box at the mean value of the observations. 
 #' 
 #' @param x A numeric vector.
 #' @keywords sample size; boxplot
@@ -23,8 +25,9 @@ give_n <- function(x){
 ##########################################################################################################
 #' Place Sample Size on Boxplots at Fixed y-value
 #'
-#' This function returns the length (number of observations, n) of a vector and a pre-specified y-value (V). 
-#' When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the specified Y-value (V). 
+#' This function returns the length (number of observations, n) of a vector and a pre-specified y-value (V). \cr
+#' 
+#' When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the specified Y-value (V). \cr
 #' Note that the parameter V must be specified before using the function.
 #' 
 #' @param x A numeric vector.
@@ -50,8 +53,10 @@ give_Vn <- function(x){
 ##########################################################################################################
 #' Place Sample Size on Boxplots at Specified Quartile
 #'
-#' This function returns the length (number of observations, n) of a vector and a pre-specified quartile (Q). 
-#' When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the specified Y-value quartile (Q). 
+#' This function returns the length (number of observations, n) of a vector and a pre-specified quartile (Q). \cr
+#' 
+#' When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot 
+#' into the box at the specified Y-value quartile (Q). \cr
 #' Note that the parameter Q must be specified before using the function.
 #' 
 #' @param x A numeric vector.

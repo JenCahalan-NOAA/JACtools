@@ -1,7 +1,9 @@
 #' Compute the Mode of numeric data
 #'
 #' This function returns the mode of a numeric vector(x).
-#' @param x A vector of values for which the Mode(x) is computed. x must be a vector of numeric values, missing values are dropped from computations; for character data use Mode.alpha().
+#' @param x A vector of values for which the Mode(x) is computed. 
+#' x must be a vector of numeric values, missing values are dropped from computations; 
+#' for character data use Mode.alpha().
 #' @return a numeric value, the mode of x
 #' @keywords Mode
 #' @export
@@ -18,7 +20,9 @@ Mode_numeric <- function(x){
 #' Compute the Mode of character data
 #'
 #' This function returns the mode of a vector(x).
-#' @param x A vector of character values for which the Mode(x) is computed. x must be a vector of character values, missing values are dropped from computations; for numeric data use Mode.numeric().
+#' @param x A vector of character values for which the Mode(x) is computed. 
+#' x must be a vector of character values, missing values are dropped from computations; 
+#' for numeric data use Mode.numeric().
 #' @return a character value, the mode of x
 #' @keywords Mode
 #' @export
@@ -33,7 +37,8 @@ Mode_alpha <- function(x) {
 ###############################################################################
 #' Compute the NOT Mode of numeric data
 #'
-#' This function returns the value that is NOT the mode (anti-mode) of a numeric vector(x). Note this is only valid for vectors with two possible values
+#' This function returns the value that is NOT the mode (anti-mode) of a numeric vector(x). 
+#' Note this is only valid for vectors with two possible values
 #' @param x A vector consisting of two values for which the Mode(x) is computed. x must be a vector of numeric values, missing values are dropped from computations; for character data use Mode.alpha().
 #' @return a numeric value, the value that is not the mode of x
 #' @keywords anti-Mode

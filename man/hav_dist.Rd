@@ -18,11 +18,12 @@ hav_dist(long1, lat1, long2, lat2, radius = 6371)
 \item{radius}{the radius of the earth; units of computed distance will be the same as the units of R. Dafaults to 6371 kilometers.}
 }
 \description{
-This function computes the great circle distance between two points (long, lat). 
-Computations default to kilometers (for the WGS84 ellipsoid). This code was 
-  adapted from https://en.wikipedia.org/wiki/Great-circle_distance;  
-  https://en.wikipedia.org/wiki/Haversine_formula;  http://www.movable-type.co.uk/scripts/latlong.html  
-In addition, see in the geosphere package  distm(p1, p2, fun = distVincentyEllipsoid) and distHaversine()
+This function computes the great circle distance between two points (long, lat).
+Computations default to kilometers (for the WGS84 ellipsoid). \cr
+This code was adapted from \url{https://en.wikipedia.org/wiki/Great-circle_distance};
+\url{https://en.wikipedia.org/wiki/Haversine_formula};  and \url{http://www.movable-type.co.uk/scripts/latlong.html}
+See also, in the geosphere package \url{https://cran.r-project.org/web/packages/geosphere/geosphere.pdf}:\cr
+distm(p1, p2, fun = distVincentyEllipsoid) and distHaversine()
 }
 \examples{
 hav_dist(0,0,45,45)

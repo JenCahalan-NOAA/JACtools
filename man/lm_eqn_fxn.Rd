@@ -14,9 +14,11 @@ lm_eqn_fxn(df, y, x)
 \item{x}{regression independant variable (x-axis of plot)}
 }
 \description{
-This function places the equation used by geom_smooth(method='lm') onto a ggplot by creating a character string from the regression. 
-   Code for this function originated here: https://stackoverflow.com/questions/7549694/add-regression-line-equation-and-r2-on-graph
-   and was adapted from here: https://groups.google.com/g/ggplot2/c/1TgH-kG5XMA
+This function places the equation used by geom_smooth(method='lm') onto a ggplot by creating a character string from the regression. \cr
+}
+\details{
+Code for this function originated here: \url{https://stackoverflow.com/questions/7549694/add-regression-line-equation-and-r2-on-graph}
+and was adapted from here: \url{https://groups.google.com/g/ggplot2/c/1TgH-kG5XMA}
 }
 \examples{
  x <- rnorm(100, 10, 3)

@@ -1,7 +1,7 @@
 #' Arrange Multiple Plots on a Page 
 #'
 #' This function places a list of ggplot objects into a single object. 
-#' taken from RBloggers, 3july12, combining ggplot images (https://www.r-bloggers.com/combining-ggplot-images/)
+#' taken from RBloggers, 3July12, combining ggplot images <https://www.r-bloggers.com/combining-ggplot-images/>
 #' 
 #' 
 #' @param plotlist A list of plots to be arranged. Defaults to NULL.

@@ -7,7 +7,9 @@
 Mode_alpha(x)
 }
 \arguments{
-\item{x}{A vector of character values for which the Mode(x) is computed. x must be a vector of character values, missing values are dropped from computations; for numeric data use Mode.numeric().}
+\item{x}{A vector of character values for which the Mode(x) is computed.
+x must be a vector of character values, missing values are dropped from computations;
+for numeric data use Mode.numeric().}
 }
 \value{
 a character value, the mode of x

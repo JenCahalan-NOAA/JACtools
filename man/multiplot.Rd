@@ -12,8 +12,8 @@ multiplot(..., plotlist = NULL, cols)
 \item{cols}{Number of columns of plots.}
 }
 \description{
-This function places a list of ggplot objects into a single object. 
-taken from RBloggers, 3july12, combining ggplot images, https://www.r-bloggers.com/2012/07/combining-ggplot-images/
+This function places a list of ggplot objects into a single object.
+taken from RBloggers, 3july12, combining ggplot images, \url{https://www.r-bloggers.com/2012/07/combining-ggplot-images/}
 }
 \examples{
 

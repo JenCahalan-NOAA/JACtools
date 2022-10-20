@@ -12,24 +12,24 @@ ggmap::ggmap(AK.base)
 }
 \description{
 This RData file contains a base map of Alaska created using ggplot2
-   based on downlaod of a google map
-Google's Terms of Service: https://cloud.google.com/maps-platform/terms/.
+based on downlaod of a google map
+Google's Terms of Service: \url{https://cloud.google.com/maps-platform/terms/}.
 Please cite ggmap if you use it! See citation("ggmap") for details.
 }
 \details{
 The base map was generated using the following code:
 
 AK.base <- get_map(location = c(lon=-150,lat=60),
-       zoom = 3, scale = "auto",
-       maptype = c("terrain"),
-       messaging = FALSE, urlonly = FALSE,
-       filename = "ggmapTemp", crop = FALSE,
-       color = c("color"),
-       source = c("google")
+zoom = 3, scale = "auto",
+maptype = c("terrain"),
+messaging = FALSE, urlonly = FALSE,
+filename = "ggmapTemp", crop = FALSE,
+color = c("color"),
+source = c("google")
 )
 
 The dataframe, locations.dat, has the latitude, longitude, and a site_type (A or B)
-   for 100 randomly generated locations in Alaska. This dataframe is used in the example.
+for 100 randomly generated locations in Alaska. This dataframe is used in the example.
 }
 \examples{
 ggmap::ggmap(AK.base)

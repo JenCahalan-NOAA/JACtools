@@ -10,8 +10,11 @@ give_n(x)
 \item{x}{A numeric vector.}
 }
 \description{
-This function returns the length (number of observations, n) and the mean of a vector. 
-When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot into the box at the mean value of the observations.
+This function returns the length (number of observations, n) and the mean of a vector. \cr
+}
+\details{
+When used with ggplot, it can to place the number of observations within the box of a box-and-whisker plot \cr
+into the box at the mean value of the observations.
 }
 \examples{
 color.dat <- c(rep('A', 10),rep('B', 10))

@@ -3,7 +3,7 @@
 #'
 #' This RData file contains a base map of Alaska created using ggplot2
 #'    based on downlaod of a google map
-#' Google's Terms of Service: https://cloud.google.com/maps-platform/terms/.
+#' Google's Terms of Service: <https://cloud.google.com/maps-platform/terms/>.
 #' Please cite ggmap if you use it! See citation("ggmap") for details.
 #'
 #'   The base map was generated using the following code:

@@ -10,8 +10,8 @@
 #' 
 #' @param plotlist A list of plots to be combined. Defaults to NULL.
 #' @param position Position of the legend on the plots, must be specified as "right" or "bottom"
-#' @param nrow number of plot rows
-#' @param ncol number of plot columns (defaults to nr of plots)
+#' @param nrow number of plot rows (specify both nrow and ncol)
+#' @param ncol number of plot columns (specify both nrow and ncol)
 #' @keywords ggplot2 multiplot legend
 #' @export
 #' @examples
@@ -24,24 +24,28 @@
 #' fig.2 <- ggplot2::ggplot(test.dat[which(test.dat$x > 5),], aes(x,y)) + geom_point(aes(color=z))
 #' grid_arrange_shared_legend(fig.1, fig.1, ncol=2, position = "bottom")
 
- grid_arrange_shared_legend <- function(..., ncol = length(list(...)), nrow = 1, position = c("bottom", "right")) {
+ shared_legend <- function(..., nrow = 1, ncol = length(list(...)), position = c("bottom", "right")) {
 	plots <- list(...)
-	g <- ggplot2::ggplotGrob(plots[[1]] + theme(legend.position="bottom"))$grobs
+	position <- match.arg(position)
+	g <- ggplot2::ggplotGrob(plots[[1]] + theme(legend.position = position))$grobs
 	legend <- g[[which(sapply(g, function(x) x$name) == "guide-box")]]
 	lheight <- sum(legend$height)
 	lwidth <- sum(legend$width)
+	gl <- lapply(plots, function(x) x + theme(legend.position = "none"))
+	gl <- c(gl, nrow = nrow, ncol = ncol)
 	
 	combined <- switch(position,
-	"bottom" = gridExtra::grid.arrange(
-			do.call(gridExtra::arrangeGrob, lapply(plots, function(x)
-				x + theme(legend.position="none"))),
+	"bottom" = gridExtra::arrangeGrob(
+			do.call(gridExtra::arrangeGrob, gl),
 			legend,
 			ncol = 1,
 			heights = unit.c(unit(1, "npc") - lheight, lheight)),
-	"right" = gridExtra::grid.arrange(
-			do.call(gridExtra::arrangeGrob, lapply(plots, function(x)
-								x + theme(legend.position="none"))),
+	"right" = gridExtra::arrangeGrob(
+			do.call(gridExtra::arrangeGrob, gl),
 			legend,
 			ncol = 2,
 			widths = unit.c(unit(1, "npc") - lwidth, lwidth)))
+
+  grid::grid.newpage()
+  grid::grid.draw(combined)
 }
